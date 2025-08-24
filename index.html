@@ -11,27 +11,60 @@
   <p> Quando selecionamos no css o h1 mais de uma vez, o ultimo codigo prevalecera, isso chamamos de efeito cascata, porem quando usasmos uma classe com "id" indendente do ultimo codigo digitado, a classe prevalecera, pois tem maior especificidade. </p>
   
   <h2 class=".titulo2">Diferença de especificidade entre CLASSE e ID:</h2>
-  <h3>Id:</h3>
-  <ul>
+  <h3 class="titulo3">Id:</h3>
+<div class="primeira">
+      <ul>
     <li>Identificador único</li>
     <li>Só pode ser usado uma vez por página.</li>
     <li>Ideal para elementos específicos (ex: um botão único)</li>
-  </ol>
+  </ul>
+</div>
   <h3 id="classe-1">Classe</h3>
-  <ul>
+  <div class="primeira">
+    <ul>
     <li>Pode ser usada em vários elementos.</li>
     <li>Serve para aplicar estilos ou comportamentos repetidos.</li>
     <li>Mais flexível e reutilizável</li>
   </ul>
+  </div>
   <h2>Qual é mais indicado para usar?</h2>
   <p>Usar classe no HTML é geralmente melhor porque oferece mais flexibilidade e reutilização no código. Enquanto o id  serve para identificar um único elemento, a classe pode ser aplicada a vários, permitindo que estilos e comportamentos sejam compartilhados entre eles. Isso torna o desenvolvimento mais organizado, facilita a manutenção e evita repetições desnecessárias. Em projetos maiores, o uso de classes é essencial para manter o código limpo e eficiente.
 </p>
 <h3> Por que é melhor usar classe?</h3>
+<div class="primeira">
 <ul>
     <li>Facilita a manutenção do código.</li>
     <li>Permite aplicar o mesmo estilo a vários elementos.</li>
     <li>Evita conflitos e limitações que o id pode causar.</li>
 </ul>
+</div>
+
+<h2>Combinadores:</h2>
+<p>Combinadores são elementos do CSS que definem relações entre os seletores, ou seja, como um elemento está conectado a outro dentro da estrutura do HTML. Eles permitem aplicar estilos com base na posição relativa dos elementos.</p>
+
+
+<div class="primeira">
+    <h3>Exemplo:</h3>
+    <ul>
+    <li>Espaço ()  seleciona descendentes (ex: div p pega todo paragrafo dentro da div )</li>
+    <li> Maior (>) seleciona filhos diretos (ex: ul > li)</li>
+    <li>Mais (+) seleciona o irmão imediato (ex: h1 + p)</li>
+    <li>Tihl (~) seleciona irmãos posteriores (ex: h1 ~ p)</li>
+</ul>
+</div>
+<h2>Pseudoclasse:</h2>
+<p>Uma pseudoclasse é um recurso do CSS usado para aplicar estilos a elementos com base em seu estado ou posição, sem precisar adicionar classes no HTML. Ela permite estilizar elementos quando estão, por exemplo, sendo hovered (passando o mouse), selecionados, ou são o primeiro filho de um pai. Não precisa de uma classe.</p>
+<h3>Exemplo:</h3>
+<div class="primeira">
+    <ul>
+        <li>p:first-child - seleciona o priemiro filho</li>
+        <li>nth-child(3) aplica o estilo no enésimo filho, nesse exemplo o terceiro.</li>
+    </ul>
+</div>
+
+
+
+
   
 
 </body>

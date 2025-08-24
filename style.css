@@ -1,9 +1,9 @@
-#titulos{
+#titulos {
     color:brown
 }
 
 
-.titulos{
+.titulos {
     color:antiquewhite
 }
 
@@ -11,6 +11,22 @@ h2 {
     color:#D2B48C
 }
 
-#classe-1{
-    color:
+#classe-1 {
+    color:aquamarine
 }
+
+.titulo3{
+    color:aquamarine
+}
+
+h3{
+    color: #ADD8E6
+}
+
+.primeira{
+    color:#D2B48C
+}
+.primeira h3:nth-child(1){
+    color: red
+}
+
