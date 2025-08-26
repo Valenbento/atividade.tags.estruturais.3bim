@@ -43,4 +43,23 @@ h3{
 .terceira{
     border: 4px solid green;
     margin-bottom: 32px;
+    padding: 20px 30px 40px 50px;
+}
+
+.quarta{
+    border: 4px solid blueviolet;
+    margin-bottom: 32px;
+    padding: 20px 40px; 
+}
+
+span{
+    color:red;
+}
+
+a {
+    display:block;
+}
+
+html {
+    scroll-behavior: smooth;
 }

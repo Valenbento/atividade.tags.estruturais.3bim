@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,106 +7,129 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="titulos" id="titulos">Estilização de Titulos com especificidade:</h1>  
-  <p> Quando selecionamos no css o h1 mais de uma vez, o ultimo codigo prevalecera, isso chamamos de efeito cascata, porem quando usasmos uma classe com "id" indendente do ultimo codigo digitado, a classe prevalecera, pois tem maior especificidade. </p>
-  
-  <h2 class=".titulo2">Diferença de especificidade entre CLASSE e ID:</h2>
-  <h3 class="titulo3">Id:</h3>
-<div class="primeira">
-      <ul>
-    <li>Identificador único</li>
-    <li>Só pode ser usado uma vez por página.</li>
-    <li>Ideal para elementos específicos (ex: um botão único)</li>
-  </ul>
-</div>
-  <h3 id="classe-1">Classe</h3>
-  <div class="primeira">
-    <ul>
-    <li>Pode ser usada em vários elementos.</li>
-    <li>Serve para aplicar estilos ou comportamentos repetidos.</li>
-    <li>Mais flexível e reutilizável</li>
-  </ul>
-  </div>
-  <h2>Qual é mais indicado para usar?</h2>
-  <p>Usar classe no HTML é geralmente melhor porque oferece mais flexibilidade e reutilização no código. Enquanto o id  serve para identificar um único elemento, a classe pode ser aplicada a vários, permitindo que estilos e comportamentos sejam compartilhados entre eles. Isso torna o desenvolvimento mais organizado, facilita a manutenção e evita repetições desnecessárias. Em projetos maiores, o uso de classes é essencial para manter o código limpo e eficiente.
-</p>
-<h3> Por que é melhor usar classe?</h3>
-<div class="primeira">
-<ul>
-    <li>Facilita a manutenção do código.</li>
-    <li>Permite aplicar o mesmo estilo a vários elementos.</li>
-    <li>Evita conflitos e limitações que o id pode causar.</li>
-</ul>
-</div>
-
-<h2>Combinadores:</h2>
-<p>Combinadores são elementos do CSS que definem relações entre os seletores, ou seja, como um elemento está conectado a outro dentro da estrutura do HTML. Eles permitem aplicar estilos com base na posição relativa dos elementos.</p>
-
-
-<div class="primeira">
-    <h3>Exemplo:</h3>
-    <ul>
-    <li>Espaço ()  seleciona descendentes (ex: div p pega todo paragrafo dentro da div )</li>
-    <li> Maior (>) seleciona filhos diretos (ex: ul > li)</li>
-    <li>Mais (+) seleciona o irmão imediato (ex: h1 + p)</li>
-    <li>Tihl (~) seleciona irmãos posteriores (ex: h1 ~ p)</li>
-</ul>
-</div>
-<h2>Pseudoclasse:</h2>
-<p>Uma pseudoclasse é um recurso do CSS usado para aplicar estilos a elementos com base em seu estado ou posição, sem precisar adicionar classes no HTML. Ela permite estilizar elementos quando estão, por exemplo, sendo hovered (passando o mouse), selecionados, ou são o primeiro filho de um pai. Não precisa de uma classe.</p>
-<h3>Exemplo:</h3>
-<div class="primeira">
-    <ul>
-        <li>p:first-child - seleciona o priemiro filho</li>
-        <li>nth-child(3) aplica o estilo no enésimo filho, nesse exemplo o terceiro.</li>
-    </ul>
-</div>
-
-<div class="segunda">
-    <h2>Box Model/Display</h2>
-    <h3>border:</h3>
-    <p> No Box Model do CSS, a border (borda) é a área que envolve o conteúdo e o padding de um elemento. Ela funciona como uma "moldura" ao redor da caixa e pode ter espessura, cor e estilo (como sólida, pontilhada ou tracejada).</p>
-    <ul>
-        <li>A border é a borda que envolve o conteúdo e o padding de um elemento no Box Model do CSS.</li>
-        <li>Cria uma moldura visual ao redor do elemento.</li>
-        <li>Espessura: definida em px, em, %, etc.</li>
-        <li>Estilo: sólido (solid), pontilhado (dotted), tracejado (dashed), duplo (double), entre outros.</li>
-        <li>A border aumenta o tamanho total do elemento, exceto quando se usa box-sizing: border-box;</li>
-    </ul>
-</div>
-
-    
-    
-       <div class="terceira">
-         <h3>Padding:</h3>
-        <ul>
-            <li>O padding é o espaçamento interno entre o conteúdo do elemento e sua borda (border) no Box Model.</li>
-            <li>Cria “respiro” dentro do elemento, aumentando a área de fundo (background) sem alterar o conteúdo.</li>
-            <li>Pode ser definido em px, em, rem, %, entre outras unidades.</li>
-            <li>padding-top - espaçamento superior.</li>
-            <li>padding-right - espaçamento à direita.</li>
-            <li>padding-bottom - espaçamento inferior.</li>
-            <li>padding-left - espaçamento à esquerda.</li>
-        </ul>
-       </div>
-       
-       <div class="quarta">
-         <h4>Shorthand</h4>
-         <ul>
-            <li>padding: 10px; → aplica em todos os lados.</li>
-            <li>padding: 10px 20px; → 10px em cima/baixo e 20px nos lados.</li>
-            <li>padding: 10px 20px 30px 40px; → topo, direita, baixo, esquerda (sentido horário).</li>
-         </ul>
-       </div>
 
    
+    <header>
+        <h1 class="titulos" id="titulos">Estilização de Títulos com especificidade:</h1>  
+        <p>
+            Quando selecionamos no css o h1 mais de uma vez, o último código prevalecerá, isso chamamos de efeito cascata. 
+            Porém, quando usamos uma classe com "id", independente do último código digitado, o id prevalecerá, pois tem maior especificidade.
+        </p>
+    </header>
 
-
-
-
-
-
+    
   
+
+   
+    <main>
+        <section id="especificidade">
+            <h2 class="titulo2">Diferença de especificidade entre CLASSE e ID:</h2>
+            
+            <h3 class="titulo3">Id:</h3>
+            <div class="primeira">
+                <ul>
+                    <li>Identificador único</li>
+                    <li>Só pode ser usado uma vez por página.</li>
+                    <li>Ideal para elementos específicos (ex: um botão único)</li>
+                </ul>
+            </div>
+
+            <h3 id="classe-1">Classe</h3>
+            <div class="primeira">
+                <ul>
+                    <li>Pode ser usada em vários elementos.</li>
+                    <li>Serve para aplicar estilos ou comportamentos repetidos.</li>
+                    <li>Mais flexível e reutilizável</li>
+                </ul>
+            </div>
+
+            <h2>Qual é mais indicado para usar?</h2>
+            <p>
+                Usar classe no HTML é geralmente melhor porque oferece mais flexibilidade e reutilização no código. 
+                Enquanto o id serve para identificar um único elemento, a classe pode ser aplicada a vários, permitindo que estilos e comportamentos sejam compartilhados entre eles.
+            </p>
+
+            <h3>Por que é melhor usar classe?</h3>
+            <div class="primeira">
+                <ul>
+                    <li>Facilita a manutenção do código.</li>
+                    <li>Permite aplicar o mesmo estilo a vários elementos.</li>
+                    <li>Evita conflitos e limitações que o id pode causar.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="combinadores">
+            <h2>Combinadores:</h2>
+            <p>
+                Combinadores são elementos do CSS que definem relações entre os seletores, ou seja, como um elemento está conectado a outro dentro da estrutura do HTML.
+            </p>
+            <div class="primeira">
+                <h3>Exemplo:</h3>
+                <ul>
+                    <li>Espaço ( ) -seleciona descendentes (ex: div p)</li>
+                    <li>Maior (>) - seleciona filhos diretos (ex: ul > li)</li>
+                    <li>Mais (+) - seleciona o irmão imediato (ex: h1 + p)</li>
+                    <li>Til (~) - seleciona irmãos posteriores (ex: h1 ~ p)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="pseudoclasse">
+            <h2>Pseudoclasse:</h2>
+            <p>
+                Uma pseudoclasse é usada para aplicar estilos a elementos com base em seu estado ou posição, sem precisar adicionar classes no HTML.
+            </p>
+            <div class="primeira">
+                <h3>Exemplo:</h3>
+                <ul>
+                    <li>p:first-child  seleciona o primeiro filho</li>
+                    <li>p:nth-child(3)  aplica estilo ao terceiro filho</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="boxmodel">
+            <h2>Box Model / Display</h2>
+            
+            <div class="segunda">
+                <h3>Border:</h3>
+                <p>A border é a borda que envolve o conteúdo e o padding de um elemento no Box Model do CSS.</p>
+                <ul>
+                    <li>Cria uma moldura visual ao redor do elemento.</li>
+                    <li>Pode ter espessura, cor e estilo (solid, dotted, dashed...).</li>
+                    <li>A border aumenta o tamanho total do elemento (salvo com box-sizing: border-box;)</li>
+                </ul>
+            </div>
+
+            <div class="terceira">
+                <h3>Padding:</h3>
+                <ul>
+                    <li>Espaçamento interno entre conteúdo e borda.</li>
+                    <li>Aumenta a área de fundo sem alterar o conteúdo.</li>
+                    <li>Pode ser definido em px, em, rem, %...</li>
+                </ul>
+            </div>
+
+            <div class="quarta">
+                <h4>Shorthand:</h4>
+                <ul>
+                    <li>padding: 10px; → todos os lados</li>
+                    <li>padding: 10px 20px; → cima/baixo e lados</li>
+                    <li>padding: 10px 20px 30px 40px; → topo, direita, baixo, esquerda</li>
+                </ul>
+            </div>
+        </section>
+
+          <nav>
+        <ul>
+            <li><a href="#especificidade">Especificidade</a></li>
+            <li><a href="#combinadores">Combinadores</a></li>
+            <li><a href="#pseudoclasse">Pseudoclasse</a></li>
+            <li><a href="#boxmodel">Box Model</a></li>
+        </ul>
+    </nav>
+    </main>
 
 </body>
 </html>
